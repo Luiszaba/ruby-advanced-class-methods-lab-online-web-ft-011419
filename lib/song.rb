@@ -95,10 +95,15 @@ end
     # Returns song
   end
   
+<<<<<<< HEAD
   def self.create_from_filename(filename)
     song =  self.new_from_filename(filename)
     song.save
   
+=======
+  def self.create_from_filename(new_file)
+    self.all << self.new_from_filename(new_file)
+>>>>>>> f62bb0e35643436113df2c483dae176cf67ca232
   end
 
   def self.destroy_all
